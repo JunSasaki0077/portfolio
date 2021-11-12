@@ -1,0 +1,18 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  color: #b9b9b9;
+  top: 0;
+  z-index: 10;
+  &-inner {
+    padding-right: 10px;
+    padding-left: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  @include mq(sp) {
+  }
+}

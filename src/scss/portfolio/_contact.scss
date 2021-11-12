@@ -1,0 +1,71 @@
+.contact {
+  &-title {
+    height: 32px;
+    line-height: 32px;
+    font-size: 1.5rem;
+    flex: 0 1 30%;
+    position: relative;
+    & span {
+      position: relative;
+      top: -10px;
+      color: red;
+      font-size: 20px;
+    }
+  }
+  &-item {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  &-input {
+    font-size: 1.6rem;
+    flex: 0 0 70%;
+    & input,
+    & textarea {
+      height: 40px;
+      padding: 0.2em 0.5em;
+      border-bottom: 1px solid #9e9e9e;
+      width: 100%;
+      font-size: 16px;
+    }
+    & textarea {
+      min-height: 200px;
+      resize: vertical;
+      border: 1px solid #9e9e9e;
+    }
+  }
+  &-btn {
+    padding: 1.2rem 2.2rem;
+    text-align: center;
+    border: 1px solid #9e9e9e;
+    max-width: 220px;
+    margin: 80px auto 0;
+    width: 100%;
+    cursor: pointer;
+  }
+  &-end-message {
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+  }
+  &-false-message {
+    display: none;
+  }
+  @include mq(tb) {
+    &-title {
+      font-size: 1rem;
+    }
+  }
+  @include mq(sp) {
+    &-item {
+      display: block;
+    }
+    &-title {
+      padding-left: 0.5em;
+    }
+    &-btn {
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+}

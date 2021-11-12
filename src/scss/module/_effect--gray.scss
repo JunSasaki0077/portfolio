@@ -1,0 +1,7 @@
+.effect--gray {
+  filter: grayscale(50%);
+  transition: 0.3s;
+  &:hover {
+    filter: none;
+  }
+}

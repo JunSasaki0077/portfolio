@@ -1,0 +1,8 @@
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding-top: 58px;
+  @include mq(tb) {
+    max-width: 80%;
+  }
+}

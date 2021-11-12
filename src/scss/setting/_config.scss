@@ -1,0 +1,23 @@
+// メディアごとにbr対応
+@media (min-width: 1313px) {
+  .pc {
+    display: none;
+  }
+}
+
+@include mq(btb) {
+  .btb {
+    display: none;
+  }
+}
+
+@include mq(tb) {
+  .tb {
+    display: none;
+  }
+}
+@include mq(sp) {
+  .sp {
+    display: none;
+  }
+}

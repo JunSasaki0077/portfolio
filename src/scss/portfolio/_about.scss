@@ -1,0 +1,26 @@
+.about {
+  margin-top: 100px;
+  &-inner {
+    display: flex;
+  }
+  &-pic {
+    width: 70%;
+    margin-right: 70px;
+  }
+  @include mq(tb) {
+    &-inner {
+      display: block;
+    }
+    &-pic {
+      margin: 0 auto 60px;
+    }
+    &-body {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+  @include mq(sp) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

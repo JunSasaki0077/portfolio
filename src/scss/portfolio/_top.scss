@@ -1,0 +1,40 @@
+.top {
+  background-image: url("../images/top.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 1080px;
+  &-inner {
+    padding-top: 25rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    color: white;
+  }
+  &-title {
+    font-size: 5rem;
+    &_bottom {
+      font-size: 3rem;
+    }
+  }
+  @include mq(tb) {
+    height: 900px;
+    &-inner {
+      padding-top: 20rem;
+    }
+    &-title {
+      font-size: 4rem;
+    }
+  }
+  @include mq(sp) {
+    height: 740px;
+    &-inner {
+      padding-top: 16rem;
+      padding-left: 7rem;
+    }
+    &-title {
+      font-size: 3rem;
+      &_bottom {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

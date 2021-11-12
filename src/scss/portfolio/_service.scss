@@ -1,0 +1,39 @@
+.service {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    text-align: center;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &-img {
+    width: auto;
+    height: 140px;
+    margin-bottom: 30px;
+  }
+  &-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  @include mq(tb) {
+    &-list {
+      display: block;
+    }
+    &-text {
+      margin: 0 auto 80px;
+      width: 80%;
+    }
+    &-img {
+      margin-bottom: 40px;
+    }
+  }
+  @include mq(sp) {
+    &-text {
+      margin-bottom: 40px;
+    }
+  }
+}

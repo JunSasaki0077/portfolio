@@ -1,0 +1,21 @@
+.footer {
+  height: 80px;
+  background-color: #3e3e3e;
+  color: #fff;
+  &-text {
+    text-align: center;
+    padding-top: 20px;
+  }
+  @include mq(tb) {
+    &-text {
+      padding-top: 26px;
+      font-size: 18px;
+    }
+  }
+  @include mq(sp) {
+    &-text {
+      padding-top: 30px;
+      font-size: 13px;
+    }
+  }
+}

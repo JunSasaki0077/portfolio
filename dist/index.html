@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>JUN SASAKI PORTFOLIO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a class="gnav-link topmove" href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a class="gnav-link topmove" href="#work">WORKS</a></li>
+            <li class="gnav-item"><a class="gnav-link topmove" href="#service">SERVICE</a></li>
+            <li class="gnav-item"><a class="gnav-link topmove" href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <nav class="hamburger__nav">
+            <div class="hamburger__inner">
+              <ul class="hamburger__list">
+                <li class="hamburger__item"><a class="topmove" href="#about">ABOUT</a></li>
+                <li class="hamburger__item"><a class="topmove" href="#work">WORKS</a></li>
+                <li class="hamburger__item"><a class="topmove" href="#service">SERVICE</a></li>
+                <li class="hamburger__item"><a class="topmove" href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="hamburger__btn"><span></span><span></span><span></span></div>
+          <div class="hamburger__mask"></div>
+        </div>
+      </div>
+    </header>
+    <section class="top">
+      <div class="top-inner">
+        <h1 class="top-title">
+          JUN<br/>SASAKI</h1>
+        <p class="top-title_bottom">PORTFOLIO</p>
+      </div>
+    </section>
+    <section class="about section">
+      <div class="container">
+        <div class="contents-title" id="about" data-aos="fade-up">
+          <h2 class="contents-title_en">ABOUT</h2>
+          <h2 class="contents-title_ja">私について</h2>
+        </div>
+        <div class="about-inner" data-aos="fade-up">
+          <div class="about-pic"><img src="../images/top.jpg" alt="#"></div>
+          <div class="about-body">
+            <h3 class="about-body_title">佐々木 純<span>[ささきじゅん]</span></h3>
+            <p class="about-body_text">30歳、東京都足立区在中、Webコーダー志望で勉強と転職活動をしています。(2021年11月現在)</p>
+            <p class="about-body_text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works section">
+      <div class="container">
+        <div class="contents-title" id="work" data-aos="fade-up">
+          <h2 class="contents-title_en">WORKS</h2>
+          <h2 class="contents-title_ja">制作実績</h2>
+        </div>
+        <div class="works-inner">
+          <ul class="works-list" data-aos="fade-up">
+            <li class="works-item" data-micromodal-trigger="modal-1" role="button"><a class="works-link effect--gray" href="#">
+                <div class="works-title">
+                  コーポレートサイトの<br/>HTML/CSS/JSコーディング</div><img class="works-img" src="../images/YourCoding.png" alt="コーポレートサイトのHTML/CSS/JSコーディング"></a></li>
+            <li class="works-item" data-micromodal-trigger="modal-2" role="button"><a class="works-link effect--gray" href="#">
+                <div class="works-title">
+                  コーポレートサイトの<br/>HTML/CSS/JSコーディング</div><img class="works-img" src="../images/ishii-kadan.png" alt="コーポレートサイトのHTML/CSS/JSコーディング"></a></li>
+            <li class="works-item" data-micromodal-trigger="modal-3" role="button"><a class="works-link effect--gray" href="#">
+                <div class="works-title">
+                  コーポレートサイトの<br/>WordPressコーディング</div><img class="works-img" src="../images/Engress.png" alt="コーポレートサイトのWordPressコーディング"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="modal-area" id="modal-1" aria-hidden="true">
+      <div class="modal-bg" tabindex="-1" data-micromodal-close>
+        <div class="modal-wrapper" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
+          <div role="document">
+            <div class="modal-contents">
+              <h3 class="modal-title" id="modal-1-title">コーポレートサイトのHTML/CSS/JSコーディング</h3><img class="modal-img" src="../images/YourCoding.png" alt="コーポレートサイトのHTML/CSS/JSコーディング">
+              <ul class="modal-list">
+                <li class="modal-item">HTML/CSS</li>
+                <li class="modal-item">JavaScript</li>
+                <li class="modal-item">レスポンシブデザイン</li>
+              </ul>
+              <div class="modal-button"><a class="modal-link" href="https://junsasaki0077.github.io/yourcoding">閲覧する</a></div>
+              <p class="modal-text">XDデザインカンプからの<br class="pc">コーディングをいたしました。</p>
+              <p class="modal-text">aos.jsを用いて各要素をふわっと表示するようにしてます。</p>
+              <p class="modal-text">
+                制作実績はsweiper.jsを用いて自動スワイプ、<br class ="tb"/>マウスでもスワイプできるように設定しております。</p>
+              <p class="modal-text">
+                お問合せフォームはGoogle Formと連携し、<br class ="tb"/>入力内容を受け取れるように設定しております。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modal-area" id="modal-2" aria-hidden="true">
+      <div class="modal-bg" tabindex="-1" data-micromodal-close>
+        <div class="modal-wrapper" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
+          <div role="document">
+            <div class="modal-contents">
+              <h3 class="modal-title" id="modal-2-title">コーポレートサイトのHTML/CSS/JSコーディング</h3><img class="modal-img" src="../images/ishii-kadan.png" alt="コーポレートサイトのHTML/CSS/JSコーディング">
+              <ul class="modal-list">
+                <li class="modal-item">HTML/CSS</li>
+                <li class="modal-item">JavaScript</li>
+                <li class="modal-item">レスポンシブデザイン</li>
+              </ul>
+              <div class="modal-button"><a class="modal-link" href="	http://webwebweb.org.webwebweb.conohawing.com">閲覧する</a></div>
+              <p class="modal-text">BASIC認証を要求されますが、下記ID・パスワードで閲覧できます。</p>
+              <p class="modal-text">
+                ID: user <br/>pass: password-1</p>
+              <p class="modal-text">XDデザインカンプからの<br class="pc">コーディングをいたしました。</p>
+              <p class="modal-text">
+                トップページのメインビューはズームアニメーション付きで<br class ="tb"/>移り変わるようになっております。</p>
+              <p class="modal-text">
+                お知らせ部分は「予約情報」と「その他」をクリックで<br class ="tb"/>切り替えることができるようにしました。</p>
+              <p class="modal-text">
+                宿泊予約のボタンをクリックするとモーダルウィンドウが<br class ="tb"/>現れるようになっております。</p>
+              <p class="modal-text">aos.jsを用いて各要素をふわっと表示するようにしてます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modal-area" id="modal-3" aria-hidden="true">
+      <div class="modal-bg" tabindex="-1" data-micromodal-close>
+        <div class="modal-wrapper" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content">
+          <div role="document">
+            <div class="modal-contents">
+              <h3 class="modal-title" id="modal-3-title">コーポレートサイトのWordPressコーディング</h3><img class="modal-img" src="../images/Engress.png" alt="コーポレートサイトのHTML/CSS/JSコーディング">
+              <ul class="modal-list">
+                <li class="modal-item">HTML/CSS</li>
+                <li class="modal-item">JavaScript</li>
+                <li class="modal-item">PHP</li>
+                <li class="modal-item">WordPress</li>
+                <li class="modal-item">カスタムフィールド</li>
+                <li class="modal-item">カスタム投稿タイプ</li>
+                <li class="modal-item">レスポンシブデザイン</li>
+              </ul>
+              <div class="modal-button"><a class="modal-link" href="https://www.webwebweb2.site/">閲覧する</a></div>
+              <p class="modal-text">BASIC認証を要求されますが、下記ID・パスワードで閲覧できます。</p>
+              <p class="modal-text">
+                ID: user <br/>pass: password-1</p>
+              <p class="modal-text">XDデザインカンプからの<br class="pc">コーディングをいたしました。</p>
+              <p class="modal-text">
+                カスタムフィールドを用いてトップページの事例部分と料金表は<br class ="tb"/>クライアント様からも変更できるようにしております。</p>
+              <p class="modal-text">お知らせ部分はカスタム投稿タイプで対応しています。</p>
+              <p class="modal-text">
+                記事ページでは関連記事やおすすめ記事を実装しており、<br class ="tb"/>SNSでも共有できるようにしております。</p>
+              <p class="modal-text">自動返信メールの設定も行いました。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service section">
+      <div class="container">
+        <div class="contents-title" id="service" data-aos="fade-up">
+          <h2 class="contents-title_en">SERVICE</h2>
+          <h2 class="contents-title_ja">できること</h2>
+        </div>
+        <div class="service-inner">
+          <ul class="service-list">
+            <li class="service-item" data-aos="fade-up" data-aos-offset="120"><img class="service-img" src="../images/HTML5.png" alt="HTML5">
+              <p class="service-text">コーポレートサイトやランディングページなど、デザインどおりにコーディングいたします。</p>
+            </li>
+            <li class="service-item" data-aos="fade-up" data-aos-offset="300"><img class="service-img" src="../images/JS.png" alt="HTML5">
+              <p class="service-text">ハンバーガーメニュー・最上部へ戻るボタンなど、デザインとユーザーの利便性を両立するアニメーションを実装いたします。</p>
+            </li>
+            <li class="service-item" data-aos="fade-up" data-aos-offset="450"><img class="service-img" src="../images/WordPress.jpg" alt="HTML5">
+              <p class="service-text">記事の投稿はもちろん、ユーザー様が細部を更新できるようにカスタマイズ性の高いWordPress実装を提供いたします。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contact section">
+      <div class="container">
+        <div class="contents-title" id="contact" data-aos="fade-up">
+          <h2 class="contents-title_en">CONTACT</h2>
+          <h2 class="contents-title_ja">お問い合わせ</h2>
+        </div>
+        <form class="contact-items" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJqEC8i5e2C7j9_equ7zhfBMi50mEBoubQfOeUBgu7beWm2w/formResponse">
+          <div class="contact-item">
+            <div class="contact-title">
+              <label class="contact-label">氏名<span>*</span></label>
+            </div>
+            <div class="contact-input">
+              <input id="name" type="text" name="entry.675085986" placeholder="氏名" required>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-title">
+              <label class="contact-label">メールアドレス<span>*</span></label>
+            </div>
+            <div class="contact-input">
+              <input id="mail" type="mail" name="entry.1171643879" placeholder="example@example.com" required>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-title">
+              <label class="contact-label">電話番号</label>
+            </div>
+            <div class="contact-input">
+              <input id="tel" type="text" name="entry.1134889510" placeholder="01-234506789" required>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-title">
+              <label class="contact-label">お問い合わせ内容<span>*</span></label>
+            </div>
+            <div class="contact-input">
+              <textarea name="entry.1109236074" placeholder="入力してください"></textarea>
+            </div>
+          </div>
+          <div class="contact-btn">
+            <input type="submit" value="送信する">
+          </div>
+          <p class="contact-end-message">お問い合わせありがとうございました</p>
+          <p class="contact-false-message">送信失敗です</p>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer-text">©JUN SASAKI PORTFOLIO,All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+doctype html
+
+block titles
+  - let title = 'ポートフォリオ'
+
+html(lang="ja")
+  head
+    include ./head/_meta
+    title #{title}
+    include ./head/_stylesheet
+
+  body
+    block content

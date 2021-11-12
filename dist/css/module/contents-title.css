@@ -1,0 +1,14 @@
+.contents-title {
+  text-align: center;
+}
+.contents-title_en {
+  color: #efefef;
+  font-size: 6.2rem;
+  font-weight: 600;
+}
+.contents-title_ja {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: -70px;
+}
+/*# sourceMappingURL=../sourcemaps/module/contents-title.css.map */

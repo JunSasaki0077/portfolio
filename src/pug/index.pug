@@ -1,0 +1,174 @@
+extends ./includes/_layout
+block titles
+  - var title = 'JUN SASAKI PORTFOLIO'
+block content
+
+
+  include ./includes/_header
+
+  section.top
+    .top-inner
+      h1.top-title JUN<br/>
+        | SASAKI
+      p.top-title_bottom PORTFOLIO
+
+  section.about.section
+    .container
+      .contents-title#about(data-aos="fade-up")
+        h2.contents-title_en ABOUT
+        h2.contents-title_ja 私について
+      .about-inner(data-aos="fade-up")
+        .about-pic
+          img(src="../images/top.jpg", alt="#")
+        .about-body
+          h3.about-body_title 佐々木 純
+            span [ささきじゅん]
+          p.about-body_text 30歳、東京都足立区在中、Webコーダー志望で勉強と転職活動をしています。(2021年11月現在)
+          p.about-body_text
+
+  section.works.section
+    .container
+      .contents-title#work(data-aos="fade-up")
+        h2.contents-title_en WORKS
+        h2.contents-title_ja 制作実績
+      .works-inner
+        ul.works-list(data-aos="fade-up")
+          li.works-item(data-micromodal-trigger="modal-1" role="button")
+            a.works-link.effect--gray(href="#")
+              .works-title コーポレートサイトの<br/>
+                | HTML/CSS/JSコーディング
+              img.works-img(src="../images/YourCoding.png", alt="コーポレートサイトのHTML/CSS/JSコーディング")
+          li.works-item(data-micromodal-trigger="modal-2" role="button")
+            a.works-link.effect--gray(href="#")
+              .works-title コーポレートサイトの<br/>
+                | HTML/CSS/JSコーディング
+              img.works-img(src="../images/ishii-kadan.png", alt="コーポレートサイトのHTML/CSS/JSコーディング")
+          li.works-item(data-micromodal-trigger="modal-3" role="button")
+            a.works-link.effect--gray(href="#")
+              .works-title コーポレートサイトの<br/>
+                | WordPressコーディング
+              img.works-img(src="../images/Engress.png", alt="コーポレートサイトのWordPressコーディング")
+
+  section.modal-area#modal-1(aria-hidden="true")
+    .modal-bg(tabindex="-1" data-micromodal-close)
+        .modal-wrapper(role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content")
+          div(role="document")
+            .modal-contents
+              h3.modal-title#modal-1-title コーポレートサイトのHTML/CSS/JSコーディング
+              img.modal-img(src="../images/YourCoding.png", alt="コーポレートサイトのHTML/CSS/JSコーディング")
+              ul.modal-list
+                li.modal-item HTML/CSS
+                li.modal-item JavaScript
+                li.modal-item レスポンシブデザイン
+              .modal-button
+                a.modal-link(href="https://junsasaki0077.github.io/yourcoding") 閲覧する
+              p.modal-text XDデザインカンプからの<br class="pc">コーディングをいたしました。
+              p.modal-text aos.jsを用いて各要素をふわっと表示するようにしてます。
+              p.modal-text 制作実績はsweiper.jsを用いて自動スワイプ、<br class ="tb"/>
+                | マウスでもスワイプできるように設定しております。
+              p.modal-text お問合せフォームはGoogle Formと連携し、<br class ="tb"/>
+                | 入力内容を受け取れるように設定しております。
+
+  section.modal-area#modal-2(aria-hidden="true")
+    .modal-bg(tabindex="-1" data-micromodal-close)
+        .modal-wrapper(role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content")
+          div(role="document")
+            .modal-contents
+              h3.modal-title#modal-2-title コーポレートサイトのHTML/CSS/JSコーディング
+              img.modal-img(src="../images/ishii-kadan.png", alt="コーポレートサイトのHTML/CSS/JSコーディング")
+              ul.modal-list
+                li.modal-item HTML/CSS
+                li.modal-item JavaScript
+                li.modal-item レスポンシブデザイン
+              .modal-button
+                a.modal-link(href="	http://webwebweb.org.webwebweb.conohawing.com") 閲覧する
+              p.modal-text BASIC認証を要求されますが、下記ID・パスワードで閲覧できます。
+              p.modal-text ID: user <br/>
+                | pass: password-1
+              p.modal-text XDデザインカンプからの<br class="pc">コーディングをいたしました。
+              p.modal-text トップページのメインビューはズームアニメーション付きで<br class ="tb"/>
+                | 移り変わるようになっております。
+              p.modal-text お知らせ部分は「予約情報」と「その他」をクリックで<br class ="tb"/>
+                | 切り替えることができるようにしました。
+              p.modal-text 宿泊予約のボタンをクリックするとモーダルウィンドウが<br class ="tb"/>
+                | 現れるようになっております。
+              p.modal-text aos.jsを用いて各要素をふわっと表示するようにしてます。
+
+  section.modal-area#modal-3(aria-hidden="true")
+    .modal-bg(tabindex="-1" data-micromodal-close)
+        .modal-wrapper(role="dialog" aria-modal="true" aria-labelledby="modal-1-title" aria-describedby="modal-1-content")
+          div(role="document")
+            .modal-contents
+              h3.modal-title#modal-3-title コーポレートサイトのWordPressコーディング
+              img.modal-img(src="../images/Engress.png", alt="コーポレートサイトのHTML/CSS/JSコーディング")
+              ul.modal-list
+                li.modal-item HTML/CSS
+                li.modal-item JavaScript
+                li.modal-item PHP
+                li.modal-item WordPress
+                li.modal-item カスタムフィールド
+                li.modal-item カスタム投稿タイプ
+                li.modal-item レスポンシブデザイン
+              .modal-button
+                a.modal-link(href="https://www.webwebweb2.site/") 閲覧する
+              p.modal-text BASIC認証を要求されますが、下記ID・パスワードで閲覧できます。
+              p.modal-text ID: user <br/>
+                | pass: password-1
+              p.modal-text XDデザインカンプからの<br class="pc">コーディングをいたしました。
+              p.modal-text カスタムフィールドを用いてトップページの事例部分と料金表は<br class ="tb"/>
+                | クライアント様からも変更できるようにしております。
+              p.modal-text お知らせ部分はカスタム投稿タイプで対応しています。
+              p.modal-text 記事ページでは関連記事やおすすめ記事を実装しており、<br class ="tb"/>
+                | SNSでも共有できるようにしております。
+              p.modal-text 自動返信メールの設定も行いました。
+
+
+  section.service.section
+    .container
+      .contents-title#service(data-aos="fade-up")
+        h2.contents-title_en SERVICE
+        h2.contents-title_ja できること
+      .service-inner
+        ul.service-list
+          li.service-item(data-aos="fade-up" data-aos-offset="120")
+            img.service-img(src="../images/HTML5.png", alt="HTML5")
+            p.service-text コーポレートサイトやランディングページなど、デザインどおりにコーディングいたします。
+          li.service-item(data-aos="fade-up" data-aos-offset="300")
+            img.service-img(src="../images/JS.png", alt="HTML5")
+            p.service-text ハンバーガーメニュー・最上部へ戻るボタンなど、デザインとユーザーの利便性を両立するアニメーションを実装いたします。
+          li.service-item(data-aos="fade-up" data-aos-offset="450")
+            img.service-img(src="../images/WordPress.jpg", alt="HTML5")
+            p.service-text 記事の投稿はもちろん、ユーザー様が細部を更新できるようにカスタマイズ性の高いWordPress実装を提供いたします。
+
+  section.contact.section
+    .container
+      .contents-title#contact(data-aos="fade-up")
+        h2.contents-title_en CONTACT
+        h2.contents-title_ja お問い合わせ
+      form#form.contact-items(action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJqEC8i5e2C7j9_equ7zhfBMi50mEBoubQfOeUBgu7beWm2w/formResponse")
+          .contact-item
+            .contact-title
+              label.contact-label 氏名<span>*</span>
+            .contact-input
+              input#name(type="text" name="entry.675085986" placeholder ="氏名" required)
+          .contact-item
+            .contact-title
+              label.contact-label メールアドレス<span>*</span>
+            .contact-input
+              input#mail(type="mail" name="entry.1171643879"  placeholder ="example@example.com" required)
+          .contact-item
+            .contact-title
+              label.contact-label 電話番号
+            .contact-input
+              input#tel(type="text" name="entry.1134889510"  placeholder ="01-234506789" required)
+          .contact-item
+            .contact-title
+              label.contact-label お問い合わせ内容<span>*</span>
+            .contact-input
+              textarea(name="entry.1109236074", placeholder="入力してください")
+          .contact-btn
+              input(type="submit" value="送信する")
+          p.contact-end-message お問い合わせありがとうございました
+          p.contact-false-message 送信失敗です
+
+  include ./includes/_footer
